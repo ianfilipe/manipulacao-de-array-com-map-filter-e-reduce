@@ -39,4 +39,9 @@ const empresas = [
 
 const anoDeCriacao = empresas.filter((empresa) => empresa.anoDeCriacao > 2000);
 
+const exibeInformacoes = empresas.map(
+  (empresa) => `${empresa.nome} CEO: ${empresa.CEO}`
+);
+
 console.log(anoDeCriacao);
+console.log(exibeInformacoes);
