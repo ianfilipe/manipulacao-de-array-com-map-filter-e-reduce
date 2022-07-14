@@ -36,3 +36,7 @@ const empresas = [
     anoDeCriacao: 1976,
   },
 ];
+
+const anoDeCriacao = empresas.filter((empresa) => empresa.anoDeCriacao > 2000);
+
+console.log(anoDeCriacao);
