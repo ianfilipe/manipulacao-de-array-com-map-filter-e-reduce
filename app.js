@@ -43,5 +43,10 @@ const exibeInformacoes = empresas.map(
   (empresa) => `${empresa.nome} CEO: ${empresa.CEO}`
 );
 
+const total = empresas.reduce((resultado, quantidade) => {
+  return resultado + quantidade.valorDeMercado;
+});
+
 console.log(anoDeCriacao);
 console.log(exibeInformacoes);
+console.log(total);
